@@ -139,3 +139,36 @@ body{
         opacity: 1;
     }
 }
+
+
+/* 3rd loader */
+
+.loader3 .circle-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loader3 .round{ 
+    height: 70px;
+    width: 70px;
+    border-top: 10px solid rgb(69, 207, 99);
+    border-bottom: 10px solid rgb(72, 216, 221);
+    border-left: 10px solid rgb(180, 180, 180);
+    border-right: 10px solid rgb(180, 180, 180);
+    border-radius: 50%;
+    animation-name: rotateBorder;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotateBorder{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
